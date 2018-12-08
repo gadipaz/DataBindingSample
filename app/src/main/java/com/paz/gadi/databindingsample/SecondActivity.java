@@ -1,15 +1,11 @@
 package com.paz.gadi.databindingsample;
 
-import android.databinding.BindingAdapter;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 import com.paz.gadi.databindingsample.databinding.ActivitySecondBinding;
 
 import java.util.Arrays;
@@ -25,7 +21,7 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivitySecondBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_second);
-        recyclerView = findViewById(R.id.my_recycler_view);
+        recyclerView = binding.myRecyclerView;
 
         // use this setting to improve performance if you know that changes
         // in content do not change the layout size of the RecyclerView
@@ -43,14 +39,5 @@ public class SecondActivity extends AppCompatActivity {
         // define an adapter
         mAdapter = new MyAdapter(items);
         recyclerView.setAdapter(mAdapter);
-    }
-    @BindingAdapter("android:src")
-    public static void setImageUrl(ImageView view, String url) {
-        RequestOptions requestOptions = new RequestOptions();
-        requestOptions.placeholder(R.drawable.ic_listentry);
-        Glide.with(view.getContext())
-                .load(url)
-                .apply(requestOptions)
-                .into(view);
     }
 }

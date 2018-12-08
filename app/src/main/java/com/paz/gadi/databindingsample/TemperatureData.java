@@ -2,6 +2,11 @@ package com.paz.gadi.databindingsample;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
+import android.databinding.BindingAdapter;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 public class TemperatureData extends BaseObservable {
     private String location;
@@ -42,6 +47,16 @@ public class TemperatureData extends BaseObservable {
     public void setUrl(String url) {
         this.url = url;
         notifyPropertyChanged(BR.url);
+    }
+
+    @BindingAdapter("android:src")
+    public static void setImageUrl(ImageView view, String url) {
+        RequestOptions requestOptions = new RequestOptions();
+        requestOptions.placeholder(R.drawable.ic_listentry);
+        Glide.with(view.getContext())
+                .load(url)
+                .apply(requestOptions)
+                .into(view);
     }
 
 }
