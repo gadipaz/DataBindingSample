@@ -1,13 +1,15 @@
-package com.paz.gadi.databindingsample;
+package com.paz.gadi.databindingsample.adapter;
+
+import com.paz.gadi.databindingsample.R;
+import com.paz.gadi.databindingsample.model.Employee;
 
 import java.util.List;
 
-public class MyAdapter extends MyBaseAdapter {
-
-    List<TemperatureData> data;
+public class EmployeeAdapter extends MyBaseAdapter {
+    List<Employee> data;
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public MyAdapter(List<TemperatureData> myDataset) {
+    public EmployeeAdapter(List<Employee> myDataset) {
         data = myDataset;
     }
     @Override
@@ -17,11 +19,10 @@ public class MyAdapter extends MyBaseAdapter {
 
     @Override
     public int getLayoutIdForType(int viewType) {
-        return R.layout.rowlayout;
+        return R.layout.row_employee;
     }
 
     @Override
     public int getItemCount() {
         return data.size();
-    }
-}
+    }}

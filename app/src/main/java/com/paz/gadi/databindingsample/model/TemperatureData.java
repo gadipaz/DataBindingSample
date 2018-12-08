@@ -1,4 +1,4 @@
-package com.paz.gadi.databindingsample;
+package com.paz.gadi.databindingsample.model;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
@@ -7,6 +7,8 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.paz.gadi.databindingsample.BR;
+import com.paz.gadi.databindingsample.R;
 
 public class TemperatureData extends BaseObservable {
     private String location;

@@ -1,4 +1,6 @@
-package com.paz.gadi.databindingsample;
+package com.paz.gadi.databindingsample.activity;
+
+import com.paz.gadi.databindingsample.model.TemperatureData;
 
 public interface MainActivityContract {
     interface Presenter {

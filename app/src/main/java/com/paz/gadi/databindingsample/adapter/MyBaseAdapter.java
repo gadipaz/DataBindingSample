@@ -1,10 +1,12 @@
-package com.paz.gadi.databindingsample;
+package com.paz.gadi.databindingsample.adapter;
 
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+
+import com.paz.gadi.databindingsample.BR;
 
 public abstract class MyBaseAdapter extends RecyclerView.Adapter<MyBaseAdapter.MyViewHolder> {
 

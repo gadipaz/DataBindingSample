@@ -1,10 +1,12 @@
-package com.paz.gadi.databindingsample;
+package com.paz.gadi.databindingsample.activity;
 
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.paz.gadi.databindingsample.R;
+import com.paz.gadi.databindingsample.model.TemperatureData;
 import com.paz.gadi.databindingsample.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity implements MainActivityContract.View{

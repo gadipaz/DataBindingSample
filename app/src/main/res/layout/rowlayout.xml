@@ -4,7 +4,7 @@
 
         <variable
             name="obj"
-            type="com.paz.gadi.databindingsample.TemperatureData"
+            type="com.paz.gadi.databindingsample.model.TemperatureData"
             />
     </data>
 

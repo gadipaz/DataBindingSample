@@ -1,7 +1,9 @@
-package com.paz.gadi.databindingsample;
+package com.paz.gadi.databindingsample.activity;
 
 import android.content.Context;
 import android.content.Intent;
+
+import com.paz.gadi.databindingsample.model.TemperatureData;
 
 public class MainActivityPresenter implements MainActivityContract.Presenter {
     private MainActivityContract.View view;
