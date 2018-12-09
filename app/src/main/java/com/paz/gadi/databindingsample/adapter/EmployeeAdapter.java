@@ -44,7 +44,8 @@ public class EmployeeAdapter extends MyBaseAdapter implements SecondActivityCont
 
     @Override
     public void showData(Employee employee) {
-        int i = 5;
+        data.get(0).setName("Gadi Paz");
+        notifyDataSetChanged();
     }
 }
 

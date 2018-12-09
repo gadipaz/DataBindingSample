@@ -33,6 +33,7 @@ public class SecondActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         _binding = DataBindingUtil.setContentView(this, R.layout.activity_second);
+        _binding.setIsLoading(true);
         initEmployeesList();
     }
     private void initEmployeesList(){
@@ -68,5 +69,6 @@ public class SecondActivity extends AppCompatActivity{
         // define an adapter
         mAdapter = new EmployeeAdapter(empDataList);
         recyclerView.setAdapter(mAdapter);
+        _binding.setIsLoading(false);
     }
 }
