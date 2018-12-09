@@ -4,6 +4,7 @@ android {
     dataBinding {
         enabled = true
     }
+    buildToolsVersion "28.0.3"
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.paz.gadi.databindingsample"

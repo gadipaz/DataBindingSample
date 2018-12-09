@@ -7,7 +7,7 @@
             type="com.paz.gadi.databindingsample.model.TemperatureData" />
         <variable
             name="presenter"
-            type="com.paz.gadi.databindingsample.activity.MainActivityPresenter"/>
+            type="com.paz.gadi.databindingsample.activity.mainActivity.MainActivityPresenter"/>
     </data>
 
     <LinearLayout

@@ -1,4 +1,4 @@
-package com.paz.gadi.databindingsample.activity;
+package com.paz.gadi.databindingsample.activity.secondActivity;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -22,7 +22,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class SecondActivity extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity{
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
@@ -68,11 +68,5 @@ public class SecondActivity extends AppCompatActivity {
         // define an adapter
         mAdapter = new EmployeeAdapter(empDataList);
         recyclerView.setAdapter(mAdapter);
-        recyclerView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
     }
 }

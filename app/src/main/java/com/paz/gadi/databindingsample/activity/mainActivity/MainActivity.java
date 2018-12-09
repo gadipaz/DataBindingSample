@@ -1,4 +1,4 @@
-package com.paz.gadi.databindingsample.activity;
+package com.paz.gadi.databindingsample.activity.mainActivity;
 
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;

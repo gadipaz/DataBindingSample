@@ -1,4 +1,4 @@
-package com.paz.gadi.databindingsample.activity;
+package com.paz.gadi.databindingsample.activity.mainActivity;
 
 import com.paz.gadi.databindingsample.model.TemperatureData;
 

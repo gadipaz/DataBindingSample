@@ -33,6 +33,9 @@ public abstract class MyBaseAdapter extends RecyclerView.Adapter<MyBaseAdapter.M
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         ViewDataBinding binding = DataBindingUtil.inflate(layoutInflater, getLayoutIdForType(viewType), parent, false);
         // set the view's size, margins, paddings and layout parameters
+
+        setPresenter(binding, parent);
+
         return new MyViewHolder(binding);
     }
 
@@ -47,5 +50,6 @@ public abstract class MyBaseAdapter extends RecyclerView.Adapter<MyBaseAdapter.M
     public abstract Object getDataAtPosition(int position);
 
     public abstract int getLayoutIdForType(int viewType);
+    public abstract void setPresenter(ViewDataBinding binding, ViewGroup parent);
 
 }
